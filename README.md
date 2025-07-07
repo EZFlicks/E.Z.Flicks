@@ -1,1 +1,719 @@
-# E.Z.Flicks
+/ezflicks-website/
+│
+├── index.html         (Home)
+├── portfolio.html     (Portfolio with tabs)
+├── about.html         (About)
+├── booking.html       (Booking with Calendly)
+├── contact.html       (Contact form)
+├── styles.css         (Shared CSS for all pages)
+├── script.js          (Shared JavaScript for tabs, smooth scroll, etc.)
+├── favicon.ico        (Custom favicon)
+└── assets/
+     └── images/       (Your photos, logo, etc.)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E.Z.Flicks | Home</title>
+  <meta name="description" content="E.Z.Flicks Photography - Capturing portraits, senior photos, and events with a modern touch." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">E.Z.<span class="accent">Flicks</span></div>
+    <nav>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="booking.html" class="nav-link">Book</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Capturing the real. The raw. The you.</h1>
+      <a href="booking.html" class="btn-primary">Book a Session</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 E.Z.Flicks Photography</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E.Z.Flicks | Portfolio</title>
+  <meta name="description" content="Explore the portfolio of E.Z.Flicks including portraits, senior photos, and events." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">E.Z.<span class="accent">Flicks</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="booking.html" class="nav-link">Book</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-target="portraits">Portraits</button>
+        <button class="tab-btn" data-target="seniors">Seniors</button>
+        <button class="tab-btn" data-target="events">Events</button>
+      </div>
+
+      <div class="tab-content active" id="portraits">
+        <div class="photo-grid">
+          <!-- Add your portrait photos here -->
+          <img src="assets/images/portrait1.jpg" alt="Portrait 1" />
+          <img src="assets/images/portrait2.jpg" alt="Portrait 2" />
+          <img src="assets/images/portrait3.jpg" alt="Portrait 3" />
+        </div>
+      </div>
+
+      <div class="tab-content" id="seniors">
+        <div class="photo-grid">
+          <!-- Add your senior photos here -->
+          <img src="assets/images/senior1.jpg" alt="Senior 1" />
+          <img src="assets/images/senior2.jpg" alt="Senior 2" />
+          <img src="assets/images/senior3.jpg" alt="Senior 3" />
+        </div>
+      </div>
+
+      <div class="tab-content" id="events">
+        <div class="photo-grid">
+          <!-- Add your event photos here -->
+          <img src="assets/images/event1.jpg" alt="Event 1" />
+          <img src="assets/images/event2.jpg" alt="Event 2" />
+          <img src="assets/images/event3.jpg" alt="Event 3" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 E.Z.Flicks Photography</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E.Z.Flicks | About</title>
+  <meta name="description" content="Learn more about E.Z.Flicks and the passion behind the lens." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">E.Z.<span class="accent">Flicks</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="booking.html" class="nav-link">Book</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About E.Z.Flicks</h2>
+      <img src="assets/images/photographer.jpg" alt="E.Z.Flicks Photography" class="about-photo" />
+      <p>
+        Hey there! I’m the heart and lens behind E.Z.Flicks. I believe photography is all about capturing the real, raw moments that tell your story. Whether it's portraits, senior photos, or special events, I’m here to make you feel comfortable and confident in front of the camera. Let’s create memories you’ll cherish forever.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 E.Z.Flicks Photography</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E.Z.Flicks | Book a Session</title>
+  <meta name="description" content="Book your photography session with E.Z.Flicks easily online." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">E.Z.<span class="accent">Flicks</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="booking.html" class="nav-link active">Book</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking">
+      <h2>Book Your Session</h2>
+      <!-- Calendly inline widget -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/your-username" 
+        style="min-width:320px;height:630px;"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      ></script>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 E.Z.Flicks Photography</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E.Z.Flicks | Contact</title>
+  <meta name="description" content="Get in touch with E.Z.Flicks Photography for bookings and inquiries." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">E.Z.<span class="accent">Flicks</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="booking.html" class="nav-link">Book</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 E.Z.Flicks Photography</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F3F4F6;
+  color: #111827;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: #1E3A8A;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.logo .accent {
+  color: #3B82F6;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #3B82F6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  height: 70vh;
+  background: url('assets/images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 0 2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #3B82F6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2563EB;
+}
+
+.portfolio h2,
+.about h2,
+.booking h2,
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  background: none;
+  border: 2px solid #1E3A8A;
+  color: #1E3A8A;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: #3B82F6;
+  color: white;
+  border-color: #3B82F6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* About page photo */
+
+.about-photo {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 5px solid #3B82F6;
+}
+
+/* Booking */
+
+.booking {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Contact form */
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact button {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+/* Footer */
+
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 4rem;
+}
+
+footer .social-links {
+  margin-top: 0.5rem;
+}
+
+footer .social-links a {
+  margin: 0 0.75rem;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F3F4F6;
+  color: #111827;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: #1E3A8A;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.logo .accent {
+  color: #3B82F6;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #3B82F6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  height: 70vh;
+  background: url('assets/images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 0 2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #3B82F6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2563EB;
+}
+
+.portfolio h2,
+.about h2,
+.booking h2,
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  background: none;
+  border: 2px solid #1E3A8A;
+  color: #1E3A8A;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: #3B82F6;
+  color: white;
+  border-color: #3B82F6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* About page photo */
+
+.about-photo {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 5px solid #3B82F6;
+}
+
+/* Booking */
+
+.booking {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Contact form */
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact button {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+/* Footer */
+
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 4rem;
+}
+
+footer .social-links {
+  margin-top: 0.5rem;
+}
+
+footer .social-links a {
+  margin: 0 0.75rem;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover
